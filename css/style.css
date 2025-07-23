@@ -647,12 +647,14 @@ body {
     .photo-showcase {
         margin-bottom: 4rem;
         padding: 0rem 4rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .swiper-wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
+        gap: 24px;
     }
 
     .swiper-slide {
@@ -669,12 +671,16 @@ body {
         transition: filter 0.2s ease;
     }
 
+    .swiper-slide img:hover {
+        filter: brightness(0.8);
+    }
+
     .swiper-slide h3 {
         font-family: var(--font-body);
         font-size: 16px;
         font-weight: 400;
         position: absolute;
-        left: 45px;
+        left: 10px;
         bottom: 10px;
         color: var(--color-background);
         padding: 5px 10px;  
@@ -684,18 +690,6 @@ body {
 
     .swiper-pagination {
         display: none;
-    }
-
-    .hero-image img {
-        display: block;
-        border-radius: 2px;
-        height: auto;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .hero-image img:hover {
-        filter: brightness(0.7);
     }
 
     .btn {
