@@ -167,7 +167,7 @@ body {
         width: auto;
     }
 
-    nav ul li a {
+    .nav-non {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 14px;
@@ -175,17 +175,15 @@ body {
         text-decoration: none;
         transition: color 0.3s ease;
     }
-
-    nav ul li a.nav-active {
+    
+    .nav-non.active {
         color: var(--color-background); /* Warna untuk link aktif */
-        font-weight: 400; /* Menebalkan teks link aktif */
-        text-decoration: none;
         text-decoration: underline;
         text-underline-offset: 0.35rem; /* Jarak garis bawah */
         text-decoration-thickness: 1px;
     }
 
-    nav ul li a:hover {
+    .nav-non:hover {
         color: #AFAFAF;
     }
 
@@ -480,13 +478,13 @@ body {
     }
 
     nav ul {
-        display: flex;
         padding: 0rem;
         list-style: none;
+        display: flex;
         gap: 3rem;
     }
 
-    nav ul li a {
+    .nav-non {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 14px;
@@ -494,17 +492,15 @@ body {
         text-decoration: none;
         transition: color 0.3s ease;
     }
-
-    nav ul li a.nav-active {
+    
+    .nav-non.active {
         color: var(--color-background); /* Warna untuk link aktif */
-        font-weight: 400; /* Menebalkan teks link aktif */
-        text-decoration: none;
         text-decoration: underline;
         text-underline-offset: 0.35rem; /* Jarak garis bawah */
         text-decoration-thickness: 1px;
     }
 
-    nav ul li a:hover {
+    .nav-non:hover {
         color: #AFAFAF;
     }
 
@@ -755,7 +751,7 @@ body {
         gap: 3rem;
     }
 
-    nav ul li a {
+    .nav-non {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 14px;
@@ -763,17 +759,15 @@ body {
         text-decoration: none;
         transition: color 0.3s ease;
     }
-
-    nav ul li a.nav-active {
+    
+    .nav-non.active {
         color: var(--color-background); /* Warna untuk link aktif */
-        font-weight: 400; /* Menebalkan teks link aktif */
-        text-decoration: none;
         text-decoration: underline;
         text-underline-offset: 0.35rem; /* Jarak garis bawah */
         text-decoration-thickness: 1px;
     }
 
-    nav ul li a:hover {
+    .nav-non:hover {
         color: #AFAFAF;
     }
 

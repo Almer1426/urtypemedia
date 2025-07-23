@@ -42,3 +42,12 @@ hamburgerButton.addEventListener('click', () => {
   navMenu.classList.toggle('is-active');
   hamburgerButton.classList.toggle('is-active');
 });
+
+const navLinks = document.querySelectorAll('.nav-non');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    navLinks.forEach(navLinks => navLinks.classList.remove('active'));
+    this.classList.add('active')
+  })
+})
