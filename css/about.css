@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* =============================================== */
+/* 1. RESET SEDERHANA & PENGATURAN BOX-SIZING      */
+/* =============================================== */
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =============================================== */
+/* 2. VARIABEL GLOBAL (DESIGN TOKENS)              */
+/* =============================================== */
+:root {
+    /* Warna dari Figma */
+    --color-background: #FFFFFF;
+    --color-text: #000;
+    --color-primary: #000; /* Contoh warna aksen */
+
+    /* Font dari Figma */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+/* =============================================== */
+/* 3. STYLE DASAR UNTUK BODY                       */
+/* =============================================== */
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =============================================== */
+/* 4. MULAI TULIS KODE CSS-MU DI SINI              */
+/* =============================================== */
+
+/* MAIN */
+@media (min-width: 916px) {
+    main {
+    background-color: var(--color-background);
+    margin-top: 8rem;
+    /* height: 5000px; */
+    }
+
+    .about {
+        margin-bottom: 8rem;
+    }
+
+    .about h1 {
+        font-family: var(--font-body);
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .about-image {
+        padding: 0rem 18rem;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .aboutus-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: var(--color-primary);
+    }
+
+    .aboutus-logo-svg {
+        margin: 4rem 2rem;
+        height: 50px;
+        width: auto;
+    }
+
+    .about-image p {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .meet {
+        margin-bottom: 14rem;
+    }
+
+    .meet h1 {
+        font-family: var(--font-body);
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .team-members {
+        padding: 0rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    .member {
+        width: 390px;
+    }
+
+    .member img {
+        border-radius: 2px;
+        height: 390px;
+        width: auto;
+    }
+
+    .member h2 {
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: -0.1rem;
+    }
+
+    .member h3 {
+        font-family: var(--font-body);
+        color: #4E4E4E;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+    }
+
+    .member p {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    /* HEADER */
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-primary);
+        color: var(--color-background);
+        padding: 0rem 2rem;
+        z-index: 1000; /* Pastikan header tetap di atas konten lainnya */
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 1.3rem 0rem;
+    }
+
+    .nav-logo-svg {
+        height: 20px;
+        width: auto;
+    }
+
+    nav ul {
+        padding: 0rem;
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+    }
+
+    nav ul li a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--color-background);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a.nav-active {
+        color: var(--color-background); /* Warna untuk link aktif */
+        font-weight: 400; /* Menebalkan teks link aktif */
+        text-decoration: none;
+        text-decoration: underline;
+        text-underline-offset: 0.35rem; /* Jarak garis bawah */
+        text-decoration-thickness: 1px;
+    }
+
+    nav ul li a:hover {
+        color: #AFAFAF;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: var(--color-primary);
+        color: var(--color-background);
+        padding: 3rem 10rem;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+
+    .footer-left {
+        padding: 0rem 0rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .footer-logo-svg {
+        height: 40px;
+        width: auto;
+    }
+
+    .footer-left p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .footer-right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .footer-right-content h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--color-background);
+    }
+
+    .social-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .social-links li {
+        margin-bottom: 20px;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-links svg {
+        margin-right: 15px;
+    }
+
+    .social-links p {
+        color: var(--color-background);
+        font-size: 16px;
+        font-weight: 400;
+        transition: color 0.3s ease;
+    }
+
+    .social-links svg path {
+        fill: var(--color-background);
+        transition: fill 0.3s ease;
+    }
+
+    .social-links a:hover p {
+        color: #AFAFAF;
+    }
+
+    .social-links a:hover svg path {
+        fill: #AFAFAF;
+    }
+
+
+    .footer-copyright {
+        border-top: #FFFFFF 1px solid;
+        text-align: center;
+        font-size: 14px;
+        color: var(--color-background);
+        margin-top: 90px;
+    }
+
+    .footer-copyright p {
+        margin-top: 10px;
+    }   
+}
