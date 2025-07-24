@@ -52,39 +52,18 @@ body {
     }
 
     .about {
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
     }
 
     .about h1 {
         font-family: var(--font-body);
         font-size: 32px;
-        font-weight: 600;
+        font-weight: 300;
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
 
-    .about-image {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    .aboutus-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: var(--color-primary);
-    }
-
-    .aboutus-logo-svg {
-        margin: 3rem 2rem;
-        height: 50px;
-        width: auto;
-    }
-
-    .about-image p {
+    .about p {
         font-family: var(--font-body);
         padding: 0rem 4rem;
         font-weight: 400;
@@ -98,7 +77,7 @@ body {
     .meet h1 {
         font-family: var(--font-body);
         font-size: 32px;
-        font-weight: 600;
+        font-weight: 300;
         text-align: center;
         margin-bottom: 2rem;
     }
