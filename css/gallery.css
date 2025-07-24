@@ -74,7 +74,7 @@ body {
     .nav-non {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 20px;
         color: var(--color-background);
         text-decoration: none;
         transition: color 0.3s ease;
@@ -95,7 +95,7 @@ body {
         background: none;
         cursor: pointer;
         border: none;
-        width: 42px;
+        width: 38px;
     }
 
     .hamburger-button .bar {
@@ -123,18 +123,14 @@ body {
         background-color: var(--color-primary);
         height: 100vh;
         width: 100%;
-        padding: 6rem 4rem;
+        padding: 4rem 2rem;
     }
 
     nav.is-active ul {
         display: flex;
         flex-direction: column;
         list-style: none;
-        gap: 3rem;
-    }
-
-    nav.is-active ul li a {
-        font-size: 24px;
+        gap: 2rem;
     }
 
     .hamburger-button.is-active .bar {
@@ -258,7 +254,7 @@ body {
     }
 }
 
-@media (min-width: 640px) and (max-width: 916px){
+@media (min-width: 640px) and (max-width: 920px){
     /* HEADER */
     header {
         display: flex;
@@ -432,7 +428,7 @@ body {
     }
 }
 
-@media (min-width: 916px) {
+@media (min-width: 920px) {
     main {
     background-color: var(--color-background);
     /* height: 5000px; */

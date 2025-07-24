@@ -46,6 +46,104 @@ body {
 
 /* MAIN */
 @media (max-width: 640px) {
+    main {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+    }
+
+    .about {
+        margin-bottom: 8rem;
+    }
+
+    .about h1 {
+        font-family: var(--font-body);
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .about-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .aboutus-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: var(--color-primary);
+    }
+
+    .aboutus-logo-svg {
+        margin: 3rem 2rem;
+        height: 50px;
+        width: auto;
+    }
+
+    .about-image p {
+        font-family: var(--font-body);
+        padding: 0rem 4rem;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+        letter-spacing: 0px;
+        justify-content: center;
+    }
+
+    .meet h1 {
+        font-family: var(--font-body);
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .team-members {
+        padding: 0rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .member {
+        width: 100%;
+    }
+
+    .member img {
+        border-radius: 2px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .member h2 {
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: -0.1rem;
+    }
+
+    .member h3 {
+        font-family: var(--font-body);
+        color: #4E4E4E;
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+
+    .member p {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 16px;
+        text-align: left;
+    }
+
     /* HEADER */
     header {
         display: flex;
@@ -78,7 +176,7 @@ body {
     .nav-non {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 20px;
         color: var(--color-background);
         text-decoration: none;
         transition: color 0.3s ease;
@@ -99,7 +197,7 @@ body {
         background: none;
         cursor: pointer;
         border: none;
-        width: 42px;
+        width: 38px;
     }
 
     .hamburger-button .bar {
@@ -127,18 +225,14 @@ body {
         background-color: var(--color-primary);
         height: 100vh;
         width: 100%;
-        padding: 6rem 4rem;
+        padding: 4rem 2rem;
     }
 
     nav.is-active ul {
         display: flex;
         flex-direction: column;
         list-style: none;
-        gap: 3rem;
-    }
-
-    nav.is-active ul li a {
-        font-size: 24px;
+        gap: 2rem;
     }
 
     .hamburger-button.is-active .bar {
@@ -262,7 +356,108 @@ body {
     }
 }
 
-@media (min-width: 640px) and (max-width: 916px){
+@media (min-width: 640px) and (max-width: 1200px){
+    main {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+    }
+
+    .about {
+        margin-bottom: 8rem;
+    }
+
+    .about h1 {
+        font-family: var(--font-body);
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .about-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .aboutus-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: var(--color-primary);
+    }
+
+    .aboutus-logo-svg {
+        margin: 3rem 2rem;
+        height: 50px;
+        width: auto;
+    }
+
+    .about-image p {
+        font-family: var(--font-body);
+        padding: 0rem 4rem;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+        letter-spacing: 0px;
+        justify-content: center;
+    }
+
+    .meet {
+        margin-bottom: 14rem;
+    }
+
+    .meet h1 {
+        font-family: var(--font-body);
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .team-members {
+        padding: 0rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .member {
+        width: 390px;
+    }
+
+    .member img {
+        border-radius: 2px;
+        height: 390px;
+        width: auto;
+    }
+
+    .member h2 {
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: -0.1rem;
+    }
+
+    .member h3 {
+        font-family: var(--font-body);
+        color: #4E4E4E;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+    }
+
+    .member p {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 16px;
+        text-align: left;
+    }
+    
     /* HEADER */
     header {
         display: flex;
@@ -436,10 +631,11 @@ body {
     }
 }
 
-@media (min-width: 916px) {
+@media (min-width: 1200px) {
     main {
     background-color: var(--color-background);
-    margin-top: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
     /* height: 5000px; */
     }
 
@@ -481,11 +677,7 @@ body {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.6;
-        text-align: justify;
-    }
-
-    .meet {
-        margin-bottom: 14rem;
+        text-align: left;
     }
 
     .meet h1 {
@@ -533,7 +725,7 @@ body {
         font-family: var(--font-body);
         font-weight: 400;
         font-size: 16px;
-        text-align: justify;
+        text-align: left;
     }
 
     /* HEADER */
