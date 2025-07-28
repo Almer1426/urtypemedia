@@ -3,7 +3,7 @@ let mySwiper;
 
 function swiperMode() {
     // Tentukan breakpoint media query
-    let mobileView = window.matchMedia('(max-width: 767px)');
+    let mobileView = window.matchMedia('(max-width: 640px)');
 
     // Cek apakah layar cocok dengan kondisi mobile
     if (mobileView.matches) {
