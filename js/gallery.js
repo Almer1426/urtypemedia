@@ -13,46 +13,161 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Data semua gambar (ganti path sesuai kebutuhan)
     const galleryData = [
-        { src: 'assets/images/car1.png', title: 'Toyota Soarer' },
-        { src: 'assets/images/car2.png', title: 'Nissan Skyline' },
-        { src: 'assets/images/car3.png', title: 'Nissan GT-R' },
-        { src: 'assets/images/car4.png', title: 'Nissan Silvia' },
-        { src: 'assets/images/car5.png', title: 'Nissan 350Z' },
-        { src: 'assets/images/car6.png', title: 'Nissan 370Z' },
-        { src: 'assets/images/car1.png', title: 'Toyota Soarer 2' },
-        { src: 'assets/images/car2.png', title: 'Nissan Skyline 2' },
-        { src: 'assets/images/car3.png', title: 'Nissan GT-R 2' },
-        { src: 'assets/images/car4.png', title: 'Nissan Silvia 2' },
-        { src: 'assets/images/car5.png', title: 'Nissan 350Z 2' },
-        { src: 'assets/images/car6.png', title: 'Nissan 370Z 2' }
+        {
+            id: 'soarer-1',
+            title: 'Toyota Soarer',
+            mainImage: 'assets/images/992-ST-black/DSC00418-2.jpg',
+            details: 'ILCE-6400<br>E PZ 16-50mm F3.5-5.6 OSS<br>35mm f/5.0 1/60s ISO200',
+            thumbnails: [
+                'assets/images/992-ST-black/DSC00418-2.jpg',
+                'assets/images/992-ST-black/DSC00422.jpg',
+                'assets/images/992-ST-black/DSC00439.jpg',
+            ]
+        },
+        {
+            id: 'skyline-1',
+            title: 'Nissan Skyline',
+            mainImage: 'assets/images/car2.png',
+            details: 'SONY A7III<br>FE 85mm F1.8<br>85mm f/1.8 1/200s ISO100',
+            thumbnails: [
+                'assets/images/car2.png',
+                'assets/images/car5.png',
+                'assets/images/car6.png'
+            ]
+        },
+        {
+            id: 'skyline-1',
+            title: 'Nissan Skyline',
+            mainImage: 'assets/images/car2.png',
+            details: 'SONY A7III<br>FE 85mm F1.8<br>85mm f/1.8 1/200s ISO100',
+            thumbnails: [
+                'assets/images/car2.png',
+                'assets/images/car5.png',
+                'assets/images/car6.png'
+            ]
+        },
+        {
+            id: 'skyline-1',
+            title: 'Nissan Skyline',
+            mainImage: 'assets/images/car2.png',
+            details: 'SONY A7III<br>FE 85mm F1.8<br>85mm f/1.8 1/200s ISO100',
+            thumbnails: [
+                'assets/images/car2.png',
+                'assets/images/car5.png',
+                'assets/images/car6.png'
+            ]
+        },
+        {
+            id: 'skyline-1',
+            title: 'Nissan Skyline',
+            mainImage: 'assets/images/car2.png',
+            details: 'SONY A7III<br>FE 85mm F1.8<br>85mm f/1.8 1/200s ISO100',
+            thumbnails: [
+                'assets/images/car2.png',
+                'assets/images/car5.png',
+                'assets/images/car6.png'
+            ]
+        },
+        {
+            id: 'skyline-1',
+            title: 'Nissan Skyline',
+            mainImage: 'assets/images/car2.png',
+            details: 'SONY A7III<br>FE 85mm F1.8<br>85mm f/1.8 1/200s ISO100',
+            thumbnails: [
+                'assets/images/car2.png',
+                'assets/images/car5.png',
+                'assets/images/car6.png'
+            ]
+        },
+        {
+            id: 'skyline-1',
+            title: 'Nissan Skyline',
+            mainImage: 'assets/images/car2.png',
+            details: 'SONY A7III<br>FE 85mm F1.8<br>85mm f/1.8 1/200s ISO100',
+            thumbnails: [
+                'assets/images/car2.png',
+                'assets/images/car5.png',
+                'assets/images/car6.png'
+            ]
+        },
+        {
+            id: 'skyline-1',
+            title: 'Nissan Skyline',
+            mainImage: 'assets/images/car2.png',
+            details: 'SONY A7III<br>FE 85mm F1.8<br>85mm f/1.8 1/200s ISO100',
+            thumbnails: [
+                'assets/images/car2.png',
+                'assets/images/car5.png',
+                'assets/images/car6.png'
+            ]
+        },
+        {
+            id: 'skyline-1',
+            title: 'Nissan Skyline',
+            mainImage: 'assets/images/car2.png',
+            details: 'SONY A7III<br>FE 85mm F1.8<br>85mm f/1.8 1/200s ISO100',
+            thumbnails: [
+                'assets/images/car2.png',
+                'assets/images/car5.png',
+                'assets/images/car6.png'
+            ]
+        },
+        {
+            id: 'skyline-1',
+            title: 'Nissan Skyline',
+            mainImage: 'assets/images/car2.png',
+            details: 'SONY A7III<br>FE 85mm F1.8<br>85mm f/1.8 1/200s ISO100',
+            thumbnails: [
+                'assets/images/car2.png',
+                'assets/images/car5.png',
+                'assets/images/car6.png'
+            ]
+        },
+        {
+            id: 'skyline-1',
+            title: 'Nissan Skyline',
+            mainImage: 'assets/images/car2.png',
+            details: 'SONY A7III<br>FE 85mm F1.8<br>85mm f/1.8 1/200s ISO100',
+            thumbnails: [
+                'assets/images/car2.png',
+                'assets/images/car5.png',
+                'assets/images/car6.png'
+            ]
+        },
     ];
 
-    const itemsPerPage = 9; // Tampilkan 9 gambar per halaman
+    const itemsPerPage = 9;
     let currentPage = 1;
     const totalPages = Math.ceil(galleryData.length / itemsPerPage);
-
+    
     const galleryContainer = document.querySelector('.hero-image');
     const paginationContainer = document.querySelector('.pagination');
+    const lightbox = document.getElementById('lightbox');
+
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+    const lightboxOverlay = lightbox.querySelector('.lightbox-overlay');
+    const lightboxMainImg = lightbox.querySelector('.lightbox-main-image img');
+    const lightboxTitle = lightbox.querySelector('.lightbox-title');
+    const lightboxDetails = lightbox.querySelector('.lightbox-details');
+    const lightboxThumbnails = lightbox.querySelector('.lightbox-thumbnails');
 
     /**
      * Menampilkan gambar untuk halaman tertentu
      * @param {number} page - Nomor halaman yang akan ditampilkan
      */
     function displayGalleryPage(page) {
-        galleryContainer.innerHTML = ''; // Kosongkan galeri
+        galleryContainer.innerHTML = '';
         currentPage = page;
-
-        const startIndex = (page - 1) * itemsPerPage;
-        const endIndex = startIndex + itemsPerPage;
-        const pageItems = galleryData.slice(startIndex, endIndex);
+        const pageItems = galleryData.slice((page - 1) * itemsPerPage, page * itemsPerPage);
 
         pageItems.forEach(item => {
             const link = document.createElement('a');
-            link.href = '#'; // Link dummy
+            link.href = '#';
             link.classList.add('image-container');
+            link.dataset.id = item.id;
 
             const img = document.createElement('img');
-            img.src = item.src;
+            img.src = item.mainImage;
             img.alt = item.title;
 
             const title = document.createElement('h3');
@@ -61,9 +176,14 @@ document.addEventListener('DOMContentLoaded', function() {
             link.appendChild(img);
             link.appendChild(title);
             galleryContainer.appendChild(link);
+            
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                openLightbox(item.id);
+            });
         });
         
-        updatePaginationButtons();
+        setupPagination();
     }
 
     /**
@@ -127,6 +247,41 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    function openLightbox(itemId) {
+        const itemData = galleryData.find(item => item.id === itemId);
+        if (!itemData) return;
+
+        lightboxMainImg.src = itemData.thumbnails[0];
+        lightboxTitle.textContent = itemData.title;
+        lightboxDetails.innerHTML = itemData.details;
+
+        lightboxThumbnails.innerHTML = '';
+        itemData.thumbnails.forEach((thumbSrc, index) => {
+            const thumbImg = document.createElement('img');
+            thumbImg.src = thumbSrc;
+            if (index === 0) thumbImg.classList.add('active');
+            
+            thumbImg.addEventListener('click', () => {
+                lightboxMainImg.src = thumbSrc;
+                lightboxThumbnails.querySelector('.active')?.classList.remove('active');
+                thumbImg.classList.add('active');
+            });
+            
+            lightboxThumbnails.appendChild(thumbImg);
+        });
+
+        lightbox.classList.add('is-open');
+        document.body.classList.add('lightbox-open');
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('is-open');
+        document.body.classList.remove('lightbox-open');
+    }
+
+    if(lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if(lightboxOverlay) lightboxOverlay.addEventListener('click', closeLightbox);
 
     // Inisialisasi galeri saat halaman dimuat
     if (galleryContainer && paginationContainer) {
