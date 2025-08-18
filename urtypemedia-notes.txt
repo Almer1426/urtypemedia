@@ -1,0 +1,5 @@
+1. Gallery 3:2
+2. Gallery Detail thumbnailnya gelap sekitar 40%
+2. Home 3:2
+3. About Us tinggal ganti
+4. About Us kecilin foto whitespace banyak

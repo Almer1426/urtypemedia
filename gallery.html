@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - urtypemedia</title>
     <meta name="description" content="Koleksi foto mobil oleh urtypemedia.">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
@@ -13,13 +14,8 @@
             <svg class="nav-logo-svg" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.98 76.43">
                  <defs>
                      <style>
-                     .cls-1 {
-                         fill: #fff;
-                     }
-
-                     .cls-2 {
-                         fill: #f47028;
-                     }
+                     .cls-1 { fill: #fff; }
+                     .cls-2 { fill: #f47028; }
                      </style>
                  </defs>
                  <g id="Layer_1-2" data-name="Layer 1">
@@ -43,7 +39,6 @@
                  </g>
              </svg>
          </a>
-
         <nav>
             <ul>
                 <li><a href="index.html" class="nav-non">Home</a></li>
@@ -52,7 +47,6 @@
                 <li><a href="#footer" class="nav-non">Contact us</a></li>
             </ul>
         </nav>
-
         <button class="hamburger-button">
             <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="times"><path fill="#6563FF" d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"></path></svg>
             <svg class="bar" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="grip-horizontal-line"><path fill="#6563FF" d="M2.5,11h19c0.276123,0,0.5-0.223877,0.5-0.5S21.776123,10,21.5,10h-19C2.223877,10,2,10.223877,2,10.5S2.223877,11,2.5,11z M21.5,14h-19C2.223877,14,2,14.223877,2,14.5S2.223877,15,2.5,15h19c0.276123,0,0.5-0.223877,0.5-0.5S21.776123,14,21.5,14z"></path></svg>    
@@ -62,12 +56,10 @@
     <main>
         <section class="hero">
             <h1>See Our Photos</h1>
-            <!-- Kontainer ini akan diisi oleh JavaScript -->
             <div class="hero-image"></div>
         </section>
     </main>
 
-    <!-- Kontainer pagination akan diisi oleh JavaScript -->
     <nav class="pagination-container">
         <ul class="pagination"></ul>
     </nav>
@@ -187,30 +179,25 @@
         <div class="lightbox-overlay"></div>
         <div class="lightbox-content">
             <button class="lightbox-close">&times;</button>
-            
-            <!-- Pembungkus Baru untuk Konten Utama -->
             <div class="lightbox-main-content">
-                <div class="lightbox-header">
-                    <h3 class="lightbox-title"></h3>
-                </div>
-
-                <div class="lightbox-main-image">
-                    <img src="" alt="Main view">
-                </div>
-
-                <div class="lightbox-details">
-                    <p></p>
+                <div class="lightbox-main-content-up">
+                    <div class="lightbox-header">
+                        <h3 class="lightbox-title"></h3>
+                    </div>
+                    <div class="lightbox-main-image">
+                        <img src="" alt="Main view">
+                    </div>
+                    <div class="lightbox-details">
+                        <p></p>
+                    </div>
                 </div>
             </div>
-
-            <div class="related-photos">
-                <div class="related-photos-grid">
-                    <!-- Thumbnail grid akan diisi oleh JavaScript -->
-                </div>
+            <div class="related-photos-grid">
             </div>
         </div>
     </div>
 
+    <script src="js/script.js"></script>
     <script src="js/gallery.js"></script>
 </body>
 </html>
