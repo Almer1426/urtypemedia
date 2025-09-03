@@ -46,18 +46,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- 3. LOGIKA LINK NAVIGASI AKTIF ---
-    // Kode ini akan otomatis memberi class 'active' pada link nav
-    // berdasarkan halaman yang sedang dibuka.
-    const currentLocation = window.location.href;
+    // --- 3. LOGIKA LINK NAVIGASI AKTIF (DISEMPURNAKAN) ---
     const navLinks = document.querySelectorAll('.nav-non');
+    const currentLocation = window.location.href;
 
+    // Bagian 1: Menentukan link aktif saat halaman pertama kali dimuat
     navLinks.forEach(link => {
-        if (link.href === currentLocation) {
-            // Hapus dulu semua class active yang mungkin ada
-            navLinks.forEach(navLink => navLink.classList.remove('active'));
-            // Tambahkan class active ke link yang cocok
+        // Hapus '/index.html' dari href untuk perbandingan yang lebih baik
+        const linkHref = link.href.replace('/index.html', '');
+        if (linkHref === currentLocation.replace('/index.html', '')) {
             link.classList.add('active');
+        } else {
+            link.classList.remove('active');
         }
+    });
+
+    // Bagian 2: Menangani SEMUA klik pada link navigasi secara langsung
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // 1. Hapus dulu class 'active' dari SEMUA link
+            navLinks.forEach(navLink => navLink.classList.remove('active'));
+            
+            // 2. Tambahkan class 'active' HANYA ke link yang baru saja diklik
+            this.classList.add('active');
+        });
     });
 });
